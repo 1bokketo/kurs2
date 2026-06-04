@@ -1,0 +1,8 @@
+{
+  "Name": "Иван",
+  "CashBalance": 5000,
+  "BankCardBalance": 15000,
+  "BonusCard": {
+    "BonusBalance": 500
+  }
+}

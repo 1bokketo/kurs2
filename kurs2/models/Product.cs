@@ -16,7 +16,7 @@ namespace kurs2.models
 
         public int StockQuantity { get; set; }
 
-        // Нужно ли взвешивать товар
+        // Для взвешивания товара (нужно ли его взвешивать)
         public bool IsWeighted { get; set; }
     }
 }

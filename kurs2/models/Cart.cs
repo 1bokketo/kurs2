@@ -3,13 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Linq;
 
 namespace kurs2.models
 {
 
     public class Cart
     {
-        public List<CartItem> Items { get; set; } = new List<CartItem>();
+        public List<CartItem> Items { get; set; } = new();
+
         public void AddItem(CartItem item)
         {
             Items.Add(item);
@@ -22,7 +24,7 @@ namespace kurs2.models
 
         public decimal CalculateTotal()
         {
-            return Items.Sum(i => i.TotalPrice);
+            return Items.Sum(x => x.TotalPrice);
         }
 
         public void Clear()

@@ -9,14 +9,17 @@ namespace kurs2.models
 
     public class CartItem
     {
-        public Product Product { get; set; }
+        public Product Product { get; set; } = null!;
+
         public int Quantity { get; set; }
+
         public decimal Weight { get; set; }
+
         public decimal TotalPrice
         {
             get
             {
-                if (Product is WeightedProduct)
+                if (Product.IsWeighted)
                     return Product.Price * Weight;
 
                 return Product.Price * Quantity;
