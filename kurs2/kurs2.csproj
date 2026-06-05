@@ -91,6 +91,7 @@
     <Compile Include="Services\DataStorageService.cs" />
     <Compile Include="Services\PaymentService.cs" />
     <Compile Include="Services\ProductService.cs" />
+    <Compile Include="Services\PurchasedHistory.cs" />
     <Compile Include="Services\ReceiptService.cs" />
     <Compile Include="Strategies\BonusPayment.cs" />
     <Compile Include="Strategies\CardPayment.cs" />

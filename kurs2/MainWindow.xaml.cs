@@ -12,17 +12,30 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using kurs2.models;
+using kurs2.Services;
+
+
+
 
 namespace kurs2
 {
-    /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
+        private DataStorageService _storageService;
+        private List<Product> _products;
+        private Cart _cart;
         public MainWindow()
         {
             InitializeComponent();
+
+            _storageService = new DataStorageService();
+
+            _products = _storageService.LoadProducts();
+
+            _cart = new Cart();
+
+            ProductsGrid.ItemsSource = _products;
         }
     }
 }
