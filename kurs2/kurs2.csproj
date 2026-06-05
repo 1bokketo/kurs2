@@ -90,6 +90,7 @@
     <Compile Include="Services\CashbackService.cs" />
     <Compile Include="Services\DataStorageService.cs" />
     <Compile Include="Services\ProductService.cs" />
+    <Compile Include="Strategies\IPaymentStrategy.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -147,7 +148,6 @@
   <ItemGroup>
     <Folder Include="Factories\" />
     <Folder Include="Receipts\" />
-    <Folder Include="Strategies\" />
     <Folder Include="ViewModels\" />
     <Folder Include="Views\" />
   </ItemGroup>
