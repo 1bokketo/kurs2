@@ -10,7 +10,7 @@ namespace kurs2.models
 
     public class Cart
     {
-        public List<CartItem> Items { get; set; } = new();
+        public List<CartItem> Items { get; set; } = new List<CartItem>();
 
         public void AddItem(CartItem item)
         {

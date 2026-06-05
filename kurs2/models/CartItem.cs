@@ -9,7 +9,7 @@ namespace kurs2.models
 
     public class CartItem
     {
-        public Product Product { get; set; } = null!;
+        public Product Product { get; set; }
 
         public int Quantity { get; set; }
 

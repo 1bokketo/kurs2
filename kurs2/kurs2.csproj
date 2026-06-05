@@ -87,7 +87,9 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="models\Receipt.cs" />
+    <Compile Include="Services\CashbackService.cs" />
     <Compile Include="Services\DataStorageService.cs" />
+    <Compile Include="Services\ProductService.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
