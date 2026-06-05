@@ -9,14 +9,12 @@ using System.Threading.Tasks;
 //расчет кешбека - 5% 
 namespace kurs2.Services
 {
-    namespace ShopSystem.Services
+    public class CashbackService
     {
-        public class CashbackService
+        private const decimal CashbackPercent = 0.05m;
+        public decimal CalculateCashback(decimal purchaseAmount)
         {
-            public decimal CalculateCashback(decimal amount)
-            {
-                return amount * 0.05m;
-            }
+            return purchaseAmount * CashbackPercent;
         }
     }
 }
