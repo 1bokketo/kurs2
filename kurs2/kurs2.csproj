@@ -89,6 +89,7 @@
     <Compile Include="models\Receipt.cs" />
     <Compile Include="Services\CashbackService.cs" />
     <Compile Include="Services\DataStorageService.cs" />
+    <Compile Include="Services\PaymentService.cs" />
     <Compile Include="Services\ProductService.cs" />
     <Compile Include="Strategies\IPaymentStrategy.cs" />
     <Page Include="MainWindow.xaml">
