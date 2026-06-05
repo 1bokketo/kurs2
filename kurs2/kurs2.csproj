@@ -91,6 +91,8 @@
     <Compile Include="Services\DataStorageService.cs" />
     <Compile Include="Services\PaymentService.cs" />
     <Compile Include="Services\ProductService.cs" />
+    <Compile Include="Strategies\BonusPayment.cs" />
+    <Compile Include="Strategies\CardPayment.cs" />
     <Compile Include="Strategies\CashPayment.cs" />
     <Compile Include="Strategies\IPayment.cs" />
     <Page Include="MainWindow.xaml">

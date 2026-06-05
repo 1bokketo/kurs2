@@ -10,15 +10,15 @@ using kurs2.Strategies;
 
 namespace kurs2.Services
 {
-        public class PaymentService
+    public class PaymentService
+    {
+        public bool Pay(
+            Customer customer,
+            decimal amount,
+            IPayment strategy)
         {
-            public bool Pay(
-                Customer customer,
-                decimal amount,
-                IPayment strategy)
-            {
-                return strategy.Pay(customer, amount);
-            }
+            return strategy.Pay(customer, amount);
         }
-   }
+    }
+}
 
