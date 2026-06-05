@@ -15,7 +15,7 @@ namespace kurs2.Services
             public bool Pay(
                 Customer customer,
                 decimal amount,
-                IPaymentStrategy strategy)
+                IPayment strategy)
             {
                 return strategy.Pay(customer, amount);
             }

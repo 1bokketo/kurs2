@@ -91,7 +91,8 @@
     <Compile Include="Services\DataStorageService.cs" />
     <Compile Include="Services\PaymentService.cs" />
     <Compile Include="Services\ProductService.cs" />
-    <Compile Include="Strategies\IPaymentStrategy.cs" />
+    <Compile Include="Strategies\CashPayment.cs" />
+    <Compile Include="Strategies\IPayment.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

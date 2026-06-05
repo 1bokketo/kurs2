@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 //создание метода оплаты для каждого класса 
 namespace kurs2.Strategies
 {
-    public interface IPaymentStrategy
+    public interface IPayment
     {
         bool Pay(Customer customer, decimal amount);
     }
